@@ -1,0 +1,1770 @@
+2023-08-25 20:43:10,196:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-25 20:43:10,196:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-25 20:43:10,196:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-25 20:43:10,196:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-25 20:43:10,203:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-08-25 20:44:24,561:WARNING:/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/ipykernel_1481/3977181546.py:2: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(f'{path_to_export}/all_movies.csv', sep = ';')
+
+2023-08-25 20:44:52,011:WARNING:/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/ipykernel_1481/2684917463.py:2: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(f'{path_to_export}/all_movies.csv', sep = ';')
+
+2023-08-25 20:45:40,661:INFO:PyCaret ClusteringExperiment
+2023-08-25 20:45:40,661:INFO:Logging name: cluster-default-name
+2023-08-25 20:45:40,661:INFO:ML Usecase: MLUsecase.CLUSTERING
+2023-08-25 20:45:40,661:INFO:version 3.0.0
+2023-08-25 20:45:40,661:INFO:Initializing setup()
+2023-08-25 20:45:40,661:INFO:self.USI: 6c00
+2023-08-25 20:45:40,661:INFO:self._variable_keys: {'html_param', 'gpu_param', 'pipeline', 'memory', 'logging_param', '_available_plots', 'USI', 'exp_name_log', '_ml_usecase', 'log_plots_param', 'seed', 'gpu_n_jobs_param', 'n_jobs_param', 'data', 'X', 'idx', 'exp_id'}
+2023-08-25 20:45:40,661:INFO:Checking environment
+2023-08-25 20:45:40,662:INFO:python_version: 3.9.6
+2023-08-25 20:45:40,662:INFO:python_build: ('default', 'May  7 2023 23:32:44')
+2023-08-25 20:45:40,662:INFO:machine: arm64
+2023-08-25 20:45:40,662:INFO:platform: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:45:40,662:INFO:Memory: svmem(total=8589934592, available=2264645632, percent=73.6, used=3468279808, free=56377344, active=2258944000, inactive=2194391040, wired=1209335808)
+2023-08-25 20:45:40,662:INFO:Physical Core: 8
+2023-08-25 20:45:40,662:INFO:Logical Core: 8
+2023-08-25 20:45:40,662:INFO:Checking libraries
+2023-08-25 20:45:40,662:INFO:System:
+2023-08-25 20:45:40,662:INFO:    python: 3.9.6 (default, May  7 2023, 23:32:44)  [Clang 14.0.3 (clang-1403.0.22.14.1)]
+2023-08-25 20:45:40,662:INFO:executable: /Library/Developer/CommandLineTools/usr/bin/python3
+2023-08-25 20:45:40,662:INFO:   machine: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:45:40,662:INFO:PyCaret required dependencies:
+2023-08-25 20:45:40,662:INFO:                 pip: 21.2.4
+2023-08-25 20:45:40,662:INFO:          setuptools: 58.0.4
+2023-08-25 20:45:40,662:INFO:             pycaret: 3.0.0
+2023-08-25 20:45:40,662:INFO:             IPython: 8.8.0
+2023-08-25 20:45:40,662:INFO:          ipywidgets: 8.0.6
+2023-08-25 20:45:40,662:INFO:                tqdm: 4.64.1
+2023-08-25 20:45:40,662:INFO:               numpy: 1.24.3
+2023-08-25 20:45:40,662:INFO:              pandas: 1.5.3
+2023-08-25 20:45:40,662:INFO:              jinja2: 3.1.2
+2023-08-25 20:45:40,662:INFO:               scipy: 1.9.1
+2023-08-25 20:45:40,662:INFO:              joblib: 1.2.0
+2023-08-25 20:45:40,662:INFO:             sklearn: 1.2.2
+2023-08-25 20:45:40,662:INFO:                pyod: 1.0.9
+2023-08-25 20:45:40,662:INFO:            imblearn: 0.10.1
+2023-08-25 20:45:40,662:INFO:   category_encoders: 2.6.0
+2023-08-25 20:45:40,662:INFO:            lightgbm: 3.3.5
+2023-08-25 20:45:40,662:INFO:               numba: 0.56.4
+2023-08-25 20:45:40,662:INFO:            requests: 2.31.0
+2023-08-25 20:45:40,662:INFO:          matplotlib: 3.7.0
+2023-08-25 20:45:40,662:INFO:          scikitplot: 0.3.7
+2023-08-25 20:45:40,662:INFO:         yellowbrick: 1.5
+2023-08-25 20:45:40,663:INFO:              plotly: 5.14.1
+2023-08-25 20:45:40,663:INFO:             kaleido: 0.2.1
+2023-08-25 20:45:40,663:INFO:         statsmodels: 0.13.5
+2023-08-25 20:45:40,663:INFO:              sktime: 0.17.0
+2023-08-25 20:45:40,663:INFO:               tbats: 1.1.2
+2023-08-25 20:45:40,663:INFO:            pmdarima: 2.0.3
+2023-08-25 20:45:40,663:INFO:              psutil: 5.9.4
+2023-08-25 20:45:40,663:INFO:PyCaret optional dependencies:
+2023-08-25 20:45:40,673:INFO:                shap: Not installed
+2023-08-25 20:45:40,674:INFO:           interpret: Not installed
+2023-08-25 20:45:40,674:INFO:                umap: Not installed
+2023-08-25 20:45:40,674:INFO:    pandas_profiling: Not installed
+2023-08-25 20:45:40,674:INFO:  explainerdashboard: Not installed
+2023-08-25 20:45:40,674:INFO:             autoviz: Not installed
+2023-08-25 20:45:40,674:INFO:           fairlearn: Not installed
+2023-08-25 20:45:40,674:INFO:             xgboost: Not installed
+2023-08-25 20:45:40,674:INFO:            catboost: Not installed
+2023-08-25 20:45:40,674:INFO:              kmodes: Not installed
+2023-08-25 20:45:40,674:INFO:             mlxtend: Not installed
+2023-08-25 20:45:40,674:INFO:       statsforecast: Not installed
+2023-08-25 20:45:40,674:INFO:        tune_sklearn: Not installed
+2023-08-25 20:45:40,674:INFO:                 ray: Not installed
+2023-08-25 20:45:40,674:INFO:            hyperopt: Not installed
+2023-08-25 20:45:40,674:INFO:              optuna: Not installed
+2023-08-25 20:45:40,674:INFO:               skopt: Not installed
+2023-08-25 20:45:40,674:INFO:              mlflow: Not installed
+2023-08-25 20:45:40,674:INFO:              gradio: Not installed
+2023-08-25 20:45:40,674:INFO:             fastapi: Not installed
+2023-08-25 20:45:40,674:INFO:             uvicorn: Not installed
+2023-08-25 20:45:40,674:INFO:              m2cgen: Not installed
+2023-08-25 20:45:40,674:INFO:           evidently: Not installed
+2023-08-25 20:45:40,674:INFO:               fugue: Not installed
+2023-08-25 20:45:40,674:INFO:           streamlit: 1.20.0
+2023-08-25 20:45:40,674:INFO:             prophet: Not installed
+2023-08-25 20:45:40,674:INFO:None
+2023-08-25 20:45:40,674:INFO:Set up data.
+2023-08-25 20:45:40,692:INFO:Set up index.
+2023-08-25 20:45:40,692:INFO:Assigning column types.
+2023-08-25 20:45:40,694:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-08-25 20:45:40,694:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:45:40,694:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,694:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:45:40,694:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,694:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-08-25 20:45:40,694:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,695:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,696:INFO:Preparing preprocessing pipeline...
+2023-08-25 20:45:40,696:INFO:Set up simple imputation.
+2023-08-25 20:45:40,706:INFO:Finished creating preprocessing pipeline.
+2023-08-25 20:45:40,709:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['feature_1', 'feature_2',
+                                             'feature_3', 'feature_4',
+                                             'feature_5', 'feature_6',
+                                             'feature_7', 'feature_8',
+                                             'feature_9', 'feature_10',
+                                             'feature_11', 'feature_12',
+                                             'feature_13', 'feature_14',
+                                             'feature_15', 'feature_16',
+                                             'feature_17', 'feature_18',
+                                             'feature_19', 'feature_20',
+                                             'feature_21', 'feature_22',
+                                             'feature_23', 'feature_24',
+                                             'feature_25', 'feature_26',
+                                             'feature_27', 'feature_28',
+                                             'feature_29', 'feature_30', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2023-08-25 20:45:40,709:INFO:Creating final display dataframe.
+2023-08-25 20:45:40,718:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape            (335, 137)
+2   Transformed data shape            (335, 137)
+3         Numeric features                   137
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                 CPU Jobs                    -1
+9                  Use GPU                 False
+10          Log Experiment                 False
+11         Experiment Name  cluster-default-name
+12                     USI                  6c00
+2023-08-25 20:45:40,722:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,722:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:45:40,722:INFO:setup() successfully completed in 0.06s...............
+2023-08-25 20:45:42,974:INFO:Initializing create_model()
+2023-08-25 20:45:42,975:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:45:42,975:INFO:Checking exceptions
+2023-08-25 20:45:43,019:INFO:Importing untrained model
+2023-08-25 20:45:43,021:INFO:K-Means Clustering Imported successfully
+2023-08-25 20:45:43,024:INFO:Fitting Model
+2023-08-25 20:45:43,038:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:45:43,227:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:45:43,227:INFO:create_models() successfully completed......................................
+2023-08-25 20:45:43,233:INFO:Uploading results into container
+2023-08-25 20:45:43,234:INFO:Uploading model into container now
+2023-08-25 20:45:43,241:INFO:_master_model_container: 1
+2023-08-25 20:45:43,242:INFO:_display_container: 2
+2023-08-25 20:45:43,242:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:45:43,242:INFO:create_model() successfully completed......................................
+2023-08-25 20:45:53,362:INFO:Initializing create_model()
+2023-08-25 20:45:53,363:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:45:53,363:INFO:Checking exceptions
+2023-08-25 20:45:53,385:INFO:Importing untrained model
+2023-08-25 20:45:53,387:INFO:K-Means Clustering Imported successfully
+2023-08-25 20:45:53,390:INFO:Fitting Model
+2023-08-25 20:45:53,462:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:45:53,462:INFO:create_models() successfully completed......................................
+2023-08-25 20:45:53,512:INFO:Uploading results into container
+2023-08-25 20:45:53,513:INFO:Uploading model into container now
+2023-08-25 20:45:53,520:INFO:_master_model_container: 2
+2023-08-25 20:45:53,520:INFO:_display_container: 3
+2023-08-25 20:45:53,520:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:45:53,520:INFO:create_model() successfully completed......................................
+2023-08-25 20:45:54,640:INFO:Initializing create_model()
+2023-08-25 20:45:54,640:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, estimator=dbscan, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:45:54,640:INFO:Checking exceptions
+2023-08-25 20:45:54,665:INFO:Importing untrained model
+2023-08-25 20:45:54,667:INFO:Density-Based Spatial Clustering Imported successfully
+2023-08-25 20:45:54,669:INFO:Fitting Model
+2023-08-25 20:45:54,700:INFO:DBSCAN(n_jobs=-1)
+2023-08-25 20:45:54,700:INFO:create_models() successfully completed......................................
+2023-08-25 20:45:54,726:INFO:Uploading results into container
+2023-08-25 20:45:54,729:INFO:Uploading model into container now
+2023-08-25 20:45:54,772:INFO:_master_model_container: 3
+2023-08-25 20:45:54,772:INFO:_display_container: 4
+2023-08-25 20:45:54,773:INFO:DBSCAN(n_jobs=-1)
+2023-08-25 20:45:54,773:INFO:create_model() successfully completed......................................
+2023-08-25 20:45:56,954:INFO:Initializing create_model()
+2023-08-25 20:45:56,954:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, estimator=meanshift, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:45:56,954:INFO:Checking exceptions
+2023-08-25 20:45:56,979:INFO:Importing untrained model
+2023-08-25 20:45:56,981:INFO:Mean Shift Clustering Imported successfully
+2023-08-25 20:45:56,983:INFO:Fitting Model
+2023-08-25 20:45:57,812:INFO:MeanShift(n_jobs=-1)
+2023-08-25 20:45:57,812:INFO:create_models() successfully completed......................................
+2023-08-25 20:45:57,816:INFO:Uploading results into container
+2023-08-25 20:45:57,819:INFO:Uploading model into container now
+2023-08-25 20:45:57,826:INFO:_master_model_container: 4
+2023-08-25 20:45:57,826:INFO:_display_container: 5
+2023-08-25 20:45:57,827:INFO:MeanShift(n_jobs=-1)
+2023-08-25 20:45:57,827:INFO:create_model() successfully completed......................................
+2023-08-25 20:45:59,458:INFO:Initializing assign_model()
+2023-08-25 20:45:59,458:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=True)
+2023-08-25 20:45:59,458:INFO:Checking exceptions
+2023-08-25 20:45:59,458:INFO:Determining Trained Model
+2023-08-25 20:45:59,458:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:45:59,458:INFO:Copying data
+2023-08-25 20:45:59,459:INFO:(335, 138)
+2023-08-25 20:45:59,459:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:00,158:INFO:Initializing assign_model()
+2023-08-25 20:46:00,158:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=DBSCAN(n_jobs=-1), transformation=False, score=True, verbose=True)
+2023-08-25 20:46:00,158:INFO:Checking exceptions
+2023-08-25 20:46:00,158:INFO:Determining Trained Model
+2023-08-25 20:46:00,158:INFO:Trained Model : Density-Based Spatial Clustering
+2023-08-25 20:46:00,158:INFO:Copying data
+2023-08-25 20:46:00,159:INFO:(335, 138)
+2023-08-25 20:46:00,159:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:00,819:INFO:Initializing assign_model()
+2023-08-25 20:46:00,819:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=MeanShift(n_jobs=-1), transformation=False, score=True, verbose=True)
+2023-08-25 20:46:00,820:INFO:Checking exceptions
+2023-08-25 20:46:00,820:INFO:Determining Trained Model
+2023-08-25 20:46:00,820:INFO:Trained Model : Mean Shift Clustering
+2023-08-25 20:46:00,820:INFO:Copying data
+2023-08-25 20:46:00,822:INFO:(335, 138)
+2023-08-25 20:46:00,822:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:02,031:INFO:Initializing plot_model()
+2023-08-25 20:46:02,031:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:02,031:INFO:Checking exceptions
+2023-08-25 20:46:02,033:INFO:Preloading libraries
+2023-08-25 20:46:02,033:INFO:Copying training dataset
+2023-08-25 20:46:02,033:INFO:Plot type: elbow
+2023-08-25 20:46:02,043:INFO:Fitting Model
+2023-08-25 20:46:02,044:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,130:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,205:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,265:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,347:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,445:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,543:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,652:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,758:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:46:02,899:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/yellowbrick/utils/kneed.py:156: YellowbrickWarning:
+
+No 'knee' or 'elbow point' detected This could be due to bad clustering, no actual clusters being formed etc.
+
+
+2023-08-25 20:46:02,899:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/yellowbrick/cluster/elbow.py:374: YellowbrickWarning:
+
+No 'knee' or 'elbow' point detected, pass `locate_elbow=False` to remove the warning
+
+
+2023-08-25 20:46:03,042:INFO:Visual Rendered Successfully
+2023-08-25 20:46:03,176:INFO:plot_model() successfully completed......................................
+2023-08-25 20:46:03,190:INFO:Initializing plot_model()
+2023-08-25 20:46:03,190:INFO:plot_model(plot=silhouette, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:03,190:INFO:Checking exceptions
+2023-08-25 20:46:03,192:INFO:Preloading libraries
+2023-08-25 20:46:03,192:INFO:Copying training dataset
+2023-08-25 20:46:03,192:INFO:Plot type: silhouette
+2023-08-25 20:46:03,201:INFO:Fitting Model
+2023-08-25 20:46:03,201:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2023-08-25 20:46:03,322:INFO:Visual Rendered Successfully
+2023-08-25 20:46:03,417:INFO:plot_model() successfully completed......................................
+2023-08-25 20:46:03,439:INFO:Initializing plot_model()
+2023-08-25 20:46:03,440:INFO:plot_model(plot=distribution, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:03,440:INFO:Checking exceptions
+2023-08-25 20:46:03,443:INFO:Preloading libraries
+2023-08-25 20:46:03,444:INFO:Copying training dataset
+2023-08-25 20:46:03,444:INFO:Plot type: distribution
+2023-08-25 20:46:03,445:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:46:03,445:INFO:Initializing assign_model()
+2023-08-25 20:46:03,445:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=False)
+2023-08-25 20:46:03,445:INFO:Checking exceptions
+2023-08-25 20:46:03,445:INFO:Determining Trained Model
+2023-08-25 20:46:03,445:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:46:03,445:INFO:Copying data
+2023-08-25 20:46:03,448:INFO:(335, 138)
+2023-08-25 20:46:03,448:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:03,448:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:46:03,448:INFO:Sorting dataframe
+2023-08-25 20:46:03,451:INFO:Rendering Visual
+2023-08-25 20:46:03,468:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,468:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,468:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,468:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,469:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,470:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,472:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,473:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,473:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,474:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,474:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,474:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,475:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,475:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,476:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,476:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,476:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,477:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,477:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,477:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,478:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,478:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:46:03,547:INFO:Visual Rendered Successfully
+2023-08-25 20:46:03,612:INFO:plot_model() successfully completed......................................
+2023-08-25 20:46:04,217:INFO:Initializing plot_model()
+2023-08-25 20:46:04,218:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:04,218:INFO:Checking exceptions
+2023-08-25 20:46:04,219:INFO:Preloading libraries
+2023-08-25 20:46:04,220:INFO:Copying training dataset
+2023-08-25 20:46:04,220:INFO:Plot type: cluster
+2023-08-25 20:46:04,220:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:46:04,221:INFO:Initializing assign_model()
+2023-08-25 20:46:04,221:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2023-08-25 20:46:04,221:INFO:Checking exceptions
+2023-08-25 20:46:04,221:INFO:Determining Trained Model
+2023-08-25 20:46:04,221:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:46:04,221:INFO:Copying data
+2023-08-25 20:46:04,229:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-08-25 20:46:04,229:INFO:(335, 138)
+2023-08-25 20:46:04,229:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:04,230:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:46:04,230:INFO:Fitting PCA()
+2023-08-25 20:46:04,247:INFO:Sorting dataframe
+2023-08-25 20:46:04,247:INFO:Rendering Visual
+2023-08-25 20:46:04,283:INFO:Visual Rendered Successfully
+2023-08-25 20:46:04,353:INFO:plot_model() successfully completed......................................
+2023-08-25 20:46:05,150:INFO:Initializing plot_model()
+2023-08-25 20:46:05,151:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:05,151:INFO:Checking exceptions
+2023-08-25 20:46:05,153:INFO:Preloading libraries
+2023-08-25 20:46:05,153:INFO:Copying training dataset
+2023-08-25 20:46:05,153:INFO:Plot type: tsne
+2023-08-25 20:46:05,154:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:46:05,154:INFO:Initializing assign_model()
+2023-08-25 20:46:05,154:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=False, verbose=False)
+2023-08-25 20:46:05,154:INFO:Checking exceptions
+2023-08-25 20:46:05,154:INFO:Determining Trained Model
+2023-08-25 20:46:05,154:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:46:05,154:INFO:Copying data
+2023-08-25 20:46:05,165:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-08-25 20:46:05,166:INFO:(335, 138)
+2023-08-25 20:46:05,166:INFO:assign_model() successfully completed......................................
+2023-08-25 20:46:05,166:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:46:05,166:INFO:Fitting TSNE()
+2023-08-25 20:46:06,666:INFO:Sorting dataframe
+2023-08-25 20:46:06,667:INFO:Rendering Visual
+2023-08-25 20:46:06,707:INFO:Visual Rendered Successfully
+2023-08-25 20:46:06,774:INFO:plot_model() successfully completed......................................
+2023-08-25 20:46:06,786:INFO:Initializing evaluate_model()
+2023-08-25 20:46:06,786:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:46:06,795:INFO:Initializing plot_model()
+2023-08-25 20:46:06,795:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x16b6e9670>, system=True)
+2023-08-25 20:46:06,795:INFO:Checking exceptions
+2023-08-25 20:46:06,796:INFO:Preloading libraries
+2023-08-25 20:46:06,796:INFO:Copying training dataset
+2023-08-25 20:46:06,796:INFO:Plot type: pipeline
+2023-08-25 20:47:00,970:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/seaborn/categorical.py:3201: UserWarning:
+
+Setting `sharex=False` with `color=None` may cause different levels of the `x` variable to share colors. This will change in a future version.
+
+
+2023-08-25 20:47:12,423:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:47:12,426:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:47:12,428:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:47:12,430:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:47:28,013:INFO:PyCaret ClusteringExperiment
+2023-08-25 20:47:28,013:INFO:Logging name: cluster-default-name
+2023-08-25 20:47:28,013:INFO:ML Usecase: MLUsecase.CLUSTERING
+2023-08-25 20:47:28,013:INFO:version 3.0.0
+2023-08-25 20:47:28,013:INFO:Initializing setup()
+2023-08-25 20:47:28,013:INFO:self.USI: eabd
+2023-08-25 20:47:28,013:INFO:self._variable_keys: {'html_param', 'gpu_param', 'pipeline', 'memory', 'logging_param', '_available_plots', 'USI', 'exp_name_log', '_ml_usecase', 'log_plots_param', 'seed', 'gpu_n_jobs_param', 'n_jobs_param', 'data', 'X', 'idx', 'exp_id'}
+2023-08-25 20:47:28,013:INFO:Checking environment
+2023-08-25 20:47:28,013:INFO:python_version: 3.9.6
+2023-08-25 20:47:28,013:INFO:python_build: ('default', 'May  7 2023 23:32:44')
+2023-08-25 20:47:28,013:INFO:machine: arm64
+2023-08-25 20:47:28,013:INFO:platform: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:47:28,013:INFO:Memory: svmem(total=8589934592, available=1913716736, percent=77.7, used=3163242496, free=98598912, active=1856405504, inactive=1810137088, wired=1306836992)
+2023-08-25 20:47:28,013:INFO:Physical Core: 8
+2023-08-25 20:47:28,013:INFO:Logical Core: 8
+2023-08-25 20:47:28,013:INFO:Checking libraries
+2023-08-25 20:47:28,013:INFO:System:
+2023-08-25 20:47:28,013:INFO:    python: 3.9.6 (default, May  7 2023, 23:32:44)  [Clang 14.0.3 (clang-1403.0.22.14.1)]
+2023-08-25 20:47:28,013:INFO:executable: /Library/Developer/CommandLineTools/usr/bin/python3
+2023-08-25 20:47:28,013:INFO:   machine: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:47:28,013:INFO:PyCaret required dependencies:
+2023-08-25 20:47:28,013:INFO:                 pip: 21.2.4
+2023-08-25 20:47:28,013:INFO:          setuptools: 58.0.4
+2023-08-25 20:47:28,013:INFO:             pycaret: 3.0.0
+2023-08-25 20:47:28,013:INFO:             IPython: 8.8.0
+2023-08-25 20:47:28,013:INFO:          ipywidgets: 8.0.6
+2023-08-25 20:47:28,013:INFO:                tqdm: 4.64.1
+2023-08-25 20:47:28,013:INFO:               numpy: 1.24.3
+2023-08-25 20:47:28,014:INFO:              pandas: 1.5.3
+2023-08-25 20:47:28,014:INFO:              jinja2: 3.1.2
+2023-08-25 20:47:28,014:INFO:               scipy: 1.9.1
+2023-08-25 20:47:28,014:INFO:              joblib: 1.2.0
+2023-08-25 20:47:28,014:INFO:             sklearn: 1.2.2
+2023-08-25 20:47:28,014:INFO:                pyod: 1.0.9
+2023-08-25 20:47:28,014:INFO:            imblearn: 0.10.1
+2023-08-25 20:47:28,014:INFO:   category_encoders: 2.6.0
+2023-08-25 20:47:28,014:INFO:            lightgbm: 3.3.5
+2023-08-25 20:47:28,014:INFO:               numba: 0.56.4
+2023-08-25 20:47:28,014:INFO:            requests: 2.31.0
+2023-08-25 20:47:28,014:INFO:          matplotlib: 3.7.0
+2023-08-25 20:47:28,014:INFO:          scikitplot: 0.3.7
+2023-08-25 20:47:28,014:INFO:         yellowbrick: 1.5
+2023-08-25 20:47:28,014:INFO:              plotly: 5.14.1
+2023-08-25 20:47:28,014:INFO:             kaleido: 0.2.1
+2023-08-25 20:47:28,014:INFO:         statsmodels: 0.13.5
+2023-08-25 20:47:28,014:INFO:              sktime: 0.17.0
+2023-08-25 20:47:28,014:INFO:               tbats: 1.1.2
+2023-08-25 20:47:28,014:INFO:            pmdarima: 2.0.3
+2023-08-25 20:47:28,014:INFO:              psutil: 5.9.4
+2023-08-25 20:47:28,014:INFO:PyCaret optional dependencies:
+2023-08-25 20:47:28,014:INFO:                shap: Not installed
+2023-08-25 20:47:28,014:INFO:           interpret: Not installed
+2023-08-25 20:47:28,014:INFO:                umap: Not installed
+2023-08-25 20:47:28,014:INFO:    pandas_profiling: Not installed
+2023-08-25 20:47:28,014:INFO:  explainerdashboard: Not installed
+2023-08-25 20:47:28,014:INFO:             autoviz: Not installed
+2023-08-25 20:47:28,014:INFO:           fairlearn: Not installed
+2023-08-25 20:47:28,014:INFO:             xgboost: Not installed
+2023-08-25 20:47:28,014:INFO:            catboost: Not installed
+2023-08-25 20:47:28,014:INFO:              kmodes: Not installed
+2023-08-25 20:47:28,014:INFO:             mlxtend: Not installed
+2023-08-25 20:47:28,014:INFO:       statsforecast: Not installed
+2023-08-25 20:47:28,014:INFO:        tune_sklearn: Not installed
+2023-08-25 20:47:28,014:INFO:                 ray: Not installed
+2023-08-25 20:47:28,014:INFO:            hyperopt: Not installed
+2023-08-25 20:47:28,014:INFO:              optuna: Not installed
+2023-08-25 20:47:28,014:INFO:               skopt: Not installed
+2023-08-25 20:47:28,014:INFO:              mlflow: Not installed
+2023-08-25 20:47:28,014:INFO:              gradio: Not installed
+2023-08-25 20:47:28,014:INFO:             fastapi: Not installed
+2023-08-25 20:47:28,014:INFO:             uvicorn: Not installed
+2023-08-25 20:47:28,014:INFO:              m2cgen: Not installed
+2023-08-25 20:47:28,014:INFO:           evidently: Not installed
+2023-08-25 20:47:28,014:INFO:               fugue: Not installed
+2023-08-25 20:47:28,014:INFO:           streamlit: 1.20.0
+2023-08-25 20:47:28,014:INFO:             prophet: Not installed
+2023-08-25 20:47:28,014:INFO:None
+2023-08-25 20:47:28,014:INFO:Set up data.
+2023-08-25 20:47:28,033:INFO:Set up index.
+2023-08-25 20:47:28,033:INFO:Assigning column types.
+2023-08-25 20:47:28,036:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-08-25 20:47:28,036:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:47:28,036:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,037:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:47:28,037:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,037:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-08-25 20:47:28,037:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,037:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,037:INFO:Preparing preprocessing pipeline...
+2023-08-25 20:47:28,037:INFO:Set up simple imputation.
+2023-08-25 20:47:28,039:INFO:Set up encoding of categorical features.
+2023-08-25 20:47:28,205:INFO:Finished creating preprocessing pipeline.
+2023-08-25 20:47:28,208:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'rating', 'word_count',
+                                             '0', '1', '2', '3', '4', '5', '6',
+                                             '7', '8', '9', '10', '11', '12',
+                                             '13', '14', '15', '16', '17', '18',
+                                             '19', '20', '21', '22', '23', '24',
+                                             '25', '26', ...],
+                                    transformer=SimpleImputer())),
+                ('categorica...
+                 TransformerWrapper(include=['title_pt', 'title_en', 'genre',
+                                             'sinopse',
+                                             'sinopse_no_stopwords'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['title_pt', 'title_en', 'genre',
+                                             'sinopse',
+                                             'sinopse_no_stopwords'],
+                                    transformer=OneHotEncoder(cols=['title_pt',
+                                                                    'title_en',
+                                                                    'genre',
+                                                                    'sinopse',
+                                                                    'sinopse_no_stopwords'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2023-08-25 20:47:28,208:INFO:Creating final display dataframe.
+2023-08-25 20:47:28,310:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (335, 145)
+2     Transformed data shape           (335, 1828)
+3           Numeric features                   140
+4       Categorical features                     5
+5   Rows with missing values                  2.1%
+6                 Preprocess                  True
+7            Imputation type                simple
+8         Numeric imputation                  mean
+9     Categorical imputation                  mode
+10  Maximum one-hot encoding                    -1
+11           Encoding method                  None
+12                  CPU Jobs                    -1
+13                   Use GPU                 False
+14            Log Experiment                 False
+15           Experiment Name  cluster-default-name
+16                       USI                  eabd
+2023-08-25 20:47:28,313:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,313:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:47:28,314:INFO:setup() successfully completed in 0.3s...............
+2023-08-25 20:47:28,996:INFO:Initializing create_model()
+2023-08-25 20:47:28,997:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:47:28,997:INFO:Checking exceptions
+2023-08-25 20:47:29,120:INFO:Importing untrained model
+2023-08-25 20:47:29,121:INFO:K-Means Clustering Imported successfully
+2023-08-25 20:47:29,124:INFO:Fitting Model
+2023-08-25 20:47:29,231:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:29,733:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:47:29,733:INFO:create_models() successfully completed......................................
+2023-08-25 20:47:29,738:INFO:Uploading results into container
+2023-08-25 20:47:29,740:INFO:Uploading model into container now
+2023-08-25 20:47:29,784:INFO:_master_model_container: 1
+2023-08-25 20:47:29,784:INFO:_display_container: 2
+2023-08-25 20:47:29,785:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:47:29,785:INFO:create_model() successfully completed......................................
+2023-08-25 20:47:30,925:INFO:Initializing evaluate_model()
+2023-08-25 20:47:30,926:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:47:30,931:INFO:Initializing plot_model()
+2023-08-25 20:47:30,931:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:30,932:INFO:Checking exceptions
+2023-08-25 20:47:30,933:INFO:Preloading libraries
+2023-08-25 20:47:30,933:INFO:Copying training dataset
+2023-08-25 20:47:30,933:INFO:Plot type: pipeline
+2023-08-25 20:47:38,192:INFO:Initializing plot_model()
+2023-08-25 20:47:38,192:INFO:plot_model(plot=distance, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:38,192:INFO:Checking exceptions
+2023-08-25 20:47:38,193:INFO:Preloading libraries
+2023-08-25 20:47:38,194:INFO:Copying training dataset
+2023-08-25 20:47:38,194:INFO:Plot type: distance
+2023-08-25 20:47:38,303:INFO:Fitting Model
+2023-08-25 20:47:38,303:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2023-08-25 20:47:38,303:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/manifold/_mds.py:299: FutureWarning:
+
+The default value of `normalized_stress` will change to `'auto'` in version 1.4. To suppress this warning, manually set the value of `normalized_stress`.
+
+
+2023-08-25 20:47:38,396:INFO:Visual Rendered Successfully
+2023-08-25 20:47:38,491:INFO:plot_model() successfully completed......................................
+2023-08-25 20:47:39,248:INFO:Initializing plot_model()
+2023-08-25 20:47:39,248:INFO:plot_model(plot=silhouette, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:39,249:INFO:Checking exceptions
+2023-08-25 20:47:39,250:INFO:Preloading libraries
+2023-08-25 20:47:39,252:INFO:Copying training dataset
+2023-08-25 20:47:39,252:INFO:Plot type: silhouette
+2023-08-25 20:47:39,369:INFO:Fitting Model
+2023-08-25 20:47:39,369:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2023-08-25 20:47:39,565:INFO:Visual Rendered Successfully
+2023-08-25 20:47:39,677:INFO:plot_model() successfully completed......................................
+2023-08-25 20:47:40,680:INFO:Initializing plot_model()
+2023-08-25 20:47:40,680:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:40,680:INFO:Checking exceptions
+2023-08-25 20:47:40,682:INFO:Preloading libraries
+2023-08-25 20:47:40,684:INFO:Copying training dataset
+2023-08-25 20:47:40,684:INFO:Plot type: elbow
+2023-08-25 20:47:40,805:INFO:Fitting Model
+2023-08-25 20:47:40,812:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:40,883:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:41,063:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:41,218:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:41,503:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:41,923:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:42,297:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:42,636:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:42,999:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:43,500:INFO:Visual Rendered Successfully
+2023-08-25 20:47:43,604:INFO:plot_model() successfully completed......................................
+2023-08-25 20:47:46,846:INFO:Initializing evaluate_model()
+2023-08-25 20:47:46,846:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:47:46,851:INFO:Initializing plot_model()
+2023-08-25 20:47:46,851:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:46,851:INFO:Checking exceptions
+2023-08-25 20:47:46,852:INFO:Preloading libraries
+2023-08-25 20:47:46,852:INFO:Copying training dataset
+2023-08-25 20:47:46,852:INFO:Plot type: pipeline
+2023-08-25 20:47:51,071:INFO:Initializing evaluate_model()
+2023-08-25 20:47:51,071:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:47:51,077:INFO:Initializing plot_model()
+2023-08-25 20:47:51,077:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:51,077:INFO:Checking exceptions
+2023-08-25 20:47:51,078:INFO:Preloading libraries
+2023-08-25 20:47:51,079:INFO:Copying training dataset
+2023-08-25 20:47:51,079:INFO:Plot type: pipeline
+2023-08-25 20:47:53,807:INFO:Initializing plot_model()
+2023-08-25 20:47:53,807:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177ed0970>, system=True)
+2023-08-25 20:47:53,807:INFO:Checking exceptions
+2023-08-25 20:47:53,808:INFO:Preloading libraries
+2023-08-25 20:47:53,810:INFO:Copying training dataset
+2023-08-25 20:47:53,810:INFO:Plot type: elbow
+2023-08-25 20:47:53,924:INFO:Fitting Model
+2023-08-25 20:47:53,931:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:54,006:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:54,172:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:54,349:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:54,568:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:54,826:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:55,275:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:55,460:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:55,759:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:47:56,266:INFO:Visual Rendered Successfully
+2023-08-25 20:47:56,427:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:39,737:WARNING:/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/ipykernel_1481/2684917463.py:2: DtypeWarning:
+
+Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+
+
+2023-08-25 20:48:46,287:INFO:PyCaret ClusteringExperiment
+2023-08-25 20:48:46,287:INFO:Logging name: cluster-default-name
+2023-08-25 20:48:46,287:INFO:ML Usecase: MLUsecase.CLUSTERING
+2023-08-25 20:48:46,287:INFO:version 3.0.0
+2023-08-25 20:48:46,287:INFO:Initializing setup()
+2023-08-25 20:48:46,287:INFO:self.USI: f52b
+2023-08-25 20:48:46,287:INFO:self._variable_keys: {'html_param', 'gpu_param', 'pipeline', 'memory', 'logging_param', '_available_plots', 'USI', 'exp_name_log', '_ml_usecase', 'log_plots_param', 'seed', 'gpu_n_jobs_param', 'n_jobs_param', 'data', 'X', 'idx', 'exp_id'}
+2023-08-25 20:48:46,287:INFO:Checking environment
+2023-08-25 20:48:46,287:INFO:python_version: 3.9.6
+2023-08-25 20:48:46,287:INFO:python_build: ('default', 'May  7 2023 23:32:44')
+2023-08-25 20:48:46,287:INFO:machine: arm64
+2023-08-25 20:48:46,287:INFO:platform: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:48:46,287:INFO:Memory: svmem(total=8589934592, available=1941667840, percent=77.4, used=3063283712, free=65585152, active=1887371264, inactive=1869856768, wired=1175912448)
+2023-08-25 20:48:46,287:INFO:Physical Core: 8
+2023-08-25 20:48:46,287:INFO:Logical Core: 8
+2023-08-25 20:48:46,287:INFO:Checking libraries
+2023-08-25 20:48:46,287:INFO:System:
+2023-08-25 20:48:46,287:INFO:    python: 3.9.6 (default, May  7 2023, 23:32:44)  [Clang 14.0.3 (clang-1403.0.22.14.1)]
+2023-08-25 20:48:46,287:INFO:executable: /Library/Developer/CommandLineTools/usr/bin/python3
+2023-08-25 20:48:46,287:INFO:   machine: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:48:46,287:INFO:PyCaret required dependencies:
+2023-08-25 20:48:46,288:INFO:                 pip: 21.2.4
+2023-08-25 20:48:46,288:INFO:          setuptools: 58.0.4
+2023-08-25 20:48:46,288:INFO:             pycaret: 3.0.0
+2023-08-25 20:48:46,288:INFO:             IPython: 8.8.0
+2023-08-25 20:48:46,288:INFO:          ipywidgets: 8.0.6
+2023-08-25 20:48:46,288:INFO:                tqdm: 4.64.1
+2023-08-25 20:48:46,288:INFO:               numpy: 1.24.3
+2023-08-25 20:48:46,288:INFO:              pandas: 1.5.3
+2023-08-25 20:48:46,288:INFO:              jinja2: 3.1.2
+2023-08-25 20:48:46,288:INFO:               scipy: 1.9.1
+2023-08-25 20:48:46,288:INFO:              joblib: 1.2.0
+2023-08-25 20:48:46,288:INFO:             sklearn: 1.2.2
+2023-08-25 20:48:46,288:INFO:                pyod: 1.0.9
+2023-08-25 20:48:46,288:INFO:            imblearn: 0.10.1
+2023-08-25 20:48:46,288:INFO:   category_encoders: 2.6.0
+2023-08-25 20:48:46,288:INFO:            lightgbm: 3.3.5
+2023-08-25 20:48:46,288:INFO:               numba: 0.56.4
+2023-08-25 20:48:46,288:INFO:            requests: 2.31.0
+2023-08-25 20:48:46,288:INFO:          matplotlib: 3.7.0
+2023-08-25 20:48:46,288:INFO:          scikitplot: 0.3.7
+2023-08-25 20:48:46,288:INFO:         yellowbrick: 1.5
+2023-08-25 20:48:46,288:INFO:              plotly: 5.14.1
+2023-08-25 20:48:46,288:INFO:             kaleido: 0.2.1
+2023-08-25 20:48:46,288:INFO:         statsmodels: 0.13.5
+2023-08-25 20:48:46,288:INFO:              sktime: 0.17.0
+2023-08-25 20:48:46,288:INFO:               tbats: 1.1.2
+2023-08-25 20:48:46,288:INFO:            pmdarima: 2.0.3
+2023-08-25 20:48:46,288:INFO:              psutil: 5.9.4
+2023-08-25 20:48:46,288:INFO:PyCaret optional dependencies:
+2023-08-25 20:48:46,288:INFO:                shap: Not installed
+2023-08-25 20:48:46,288:INFO:           interpret: Not installed
+2023-08-25 20:48:46,288:INFO:                umap: Not installed
+2023-08-25 20:48:46,288:INFO:    pandas_profiling: Not installed
+2023-08-25 20:48:46,288:INFO:  explainerdashboard: Not installed
+2023-08-25 20:48:46,288:INFO:             autoviz: Not installed
+2023-08-25 20:48:46,288:INFO:           fairlearn: Not installed
+2023-08-25 20:48:46,288:INFO:             xgboost: Not installed
+2023-08-25 20:48:46,288:INFO:            catboost: Not installed
+2023-08-25 20:48:46,288:INFO:              kmodes: Not installed
+2023-08-25 20:48:46,288:INFO:             mlxtend: Not installed
+2023-08-25 20:48:46,288:INFO:       statsforecast: Not installed
+2023-08-25 20:48:46,288:INFO:        tune_sklearn: Not installed
+2023-08-25 20:48:46,288:INFO:                 ray: Not installed
+2023-08-25 20:48:46,288:INFO:            hyperopt: Not installed
+2023-08-25 20:48:46,288:INFO:              optuna: Not installed
+2023-08-25 20:48:46,288:INFO:               skopt: Not installed
+2023-08-25 20:48:46,288:INFO:              mlflow: Not installed
+2023-08-25 20:48:46,288:INFO:              gradio: Not installed
+2023-08-25 20:48:46,288:INFO:             fastapi: Not installed
+2023-08-25 20:48:46,288:INFO:             uvicorn: Not installed
+2023-08-25 20:48:46,288:INFO:              m2cgen: Not installed
+2023-08-25 20:48:46,288:INFO:           evidently: Not installed
+2023-08-25 20:48:46,288:INFO:               fugue: Not installed
+2023-08-25 20:48:46,288:INFO:           streamlit: 1.20.0
+2023-08-25 20:48:46,288:INFO:             prophet: Not installed
+2023-08-25 20:48:46,288:INFO:None
+2023-08-25 20:48:46,288:INFO:Set up data.
+2023-08-25 20:48:46,301:INFO:Set up index.
+2023-08-25 20:48:46,301:INFO:Assigning column types.
+2023-08-25 20:48:46,302:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-08-25 20:48:46,302:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:48:46,303:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,303:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:48:46,303:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,303:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-08-25 20:48:46,303:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,303:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,303:INFO:Preparing preprocessing pipeline...
+2023-08-25 20:48:46,303:INFO:Set up simple imputation.
+2023-08-25 20:48:46,310:INFO:Finished creating preprocessing pipeline.
+2023-08-25 20:48:46,312:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['feature_1', 'feature_2',
+                                             'feature_3', 'feature_4',
+                                             'feature_5', 'feature_6',
+                                             'feature_7', 'feature_8',
+                                             'feature_9', 'feature_10',
+                                             'feature_11', 'feature_12',
+                                             'feature_13', 'feature_14',
+                                             'feature_15', 'feature_16',
+                                             'feature_17', 'feature_18',
+                                             'feature_19', 'feature_20',
+                                             'feature_21', 'feature_22',
+                                             'feature_23', 'feature_24',
+                                             'feature_25', 'feature_26',
+                                             'feature_27', 'feature_28',
+                                             'feature_29', 'feature_30', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent')))])
+2023-08-25 20:48:46,312:INFO:Creating final display dataframe.
+2023-08-25 20:48:46,323:INFO:Setup _display_container:                Description                 Value
+0               Session id                   123
+1      Original data shape            (335, 137)
+2   Transformed data shape            (335, 137)
+3         Numeric features                   137
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                 CPU Jobs                    -1
+9                  Use GPU                 False
+10          Log Experiment                 False
+11         Experiment Name  cluster-default-name
+12                     USI                  f52b
+2023-08-25 20:48:46,326:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,326:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:48:46,326:INFO:setup() successfully completed in 0.04s...............
+2023-08-25 20:48:46,335:INFO:Initializing create_model()
+2023-08-25 20:48:46,335:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:48:46,335:INFO:Checking exceptions
+2023-08-25 20:48:46,351:INFO:Importing untrained model
+2023-08-25 20:48:46,353:INFO:K-Means Clustering Imported successfully
+2023-08-25 20:48:46,355:INFO:Fitting Model
+2023-08-25 20:48:46,374:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:48:46,375:INFO:create_models() successfully completed......................................
+2023-08-25 20:48:46,391:INFO:Uploading results into container
+2023-08-25 20:48:46,393:INFO:Uploading model into container now
+2023-08-25 20:48:46,411:INFO:_master_model_container: 1
+2023-08-25 20:48:46,411:INFO:_display_container: 2
+2023-08-25 20:48:46,411:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:48:46,411:INFO:create_model() successfully completed......................................
+2023-08-25 20:48:46,591:INFO:Initializing create_model()
+2023-08-25 20:48:46,591:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, estimator=dbscan, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:48:46,591:INFO:Checking exceptions
+2023-08-25 20:48:46,652:INFO:Importing untrained model
+2023-08-25 20:48:46,656:INFO:Density-Based Spatial Clustering Imported successfully
+2023-08-25 20:48:46,659:INFO:Fitting Model
+2023-08-25 20:48:46,682:INFO:DBSCAN(n_jobs=-1)
+2023-08-25 20:48:46,682:INFO:create_models() successfully completed......................................
+2023-08-25 20:48:46,688:INFO:Uploading results into container
+2023-08-25 20:48:46,691:INFO:Uploading model into container now
+2023-08-25 20:48:46,699:INFO:_master_model_container: 2
+2023-08-25 20:48:46,699:INFO:_display_container: 3
+2023-08-25 20:48:46,700:INFO:DBSCAN(n_jobs=-1)
+2023-08-25 20:48:46,700:INFO:create_model() successfully completed......................................
+2023-08-25 20:48:46,843:INFO:Initializing create_model()
+2023-08-25 20:48:46,844:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, estimator=meanshift, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:48:46,844:INFO:Checking exceptions
+2023-08-25 20:48:46,886:INFO:Importing untrained model
+2023-08-25 20:48:46,890:INFO:Mean Shift Clustering Imported successfully
+2023-08-25 20:48:46,894:INFO:Fitting Model
+2023-08-25 20:48:46,933:INFO:MeanShift(n_jobs=-1)
+2023-08-25 20:48:46,933:INFO:create_models() successfully completed......................................
+2023-08-25 20:48:46,937:INFO:Uploading results into container
+2023-08-25 20:48:46,940:INFO:Uploading model into container now
+2023-08-25 20:48:46,946:INFO:_master_model_container: 3
+2023-08-25 20:48:46,946:INFO:_display_container: 4
+2023-08-25 20:48:46,947:INFO:MeanShift(n_jobs=-1)
+2023-08-25 20:48:46,947:INFO:create_model() successfully completed......................................
+2023-08-25 20:48:47,043:INFO:Initializing assign_model()
+2023-08-25 20:48:47,044:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=True)
+2023-08-25 20:48:47,044:INFO:Checking exceptions
+2023-08-25 20:48:47,044:INFO:Determining Trained Model
+2023-08-25 20:48:47,044:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:48:47,044:INFO:Copying data
+2023-08-25 20:48:47,045:INFO:(335, 138)
+2023-08-25 20:48:47,045:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:47,072:INFO:Initializing assign_model()
+2023-08-25 20:48:47,072:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=DBSCAN(n_jobs=-1), transformation=False, score=True, verbose=True)
+2023-08-25 20:48:47,072:INFO:Checking exceptions
+2023-08-25 20:48:47,072:INFO:Determining Trained Model
+2023-08-25 20:48:47,072:INFO:Trained Model : Density-Based Spatial Clustering
+2023-08-25 20:48:47,072:INFO:Copying data
+2023-08-25 20:48:47,074:INFO:(335, 138)
+2023-08-25 20:48:47,074:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:47,110:INFO:Initializing assign_model()
+2023-08-25 20:48:47,111:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=MeanShift(n_jobs=-1), transformation=False, score=True, verbose=True)
+2023-08-25 20:48:47,111:INFO:Checking exceptions
+2023-08-25 20:48:47,111:INFO:Determining Trained Model
+2023-08-25 20:48:47,111:INFO:Trained Model : Mean Shift Clustering
+2023-08-25 20:48:47,111:INFO:Copying data
+2023-08-25 20:48:47,112:INFO:(335, 138)
+2023-08-25 20:48:47,112:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:47,128:INFO:Initializing plot_model()
+2023-08-25 20:48:47,128:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:47,128:INFO:Checking exceptions
+2023-08-25 20:48:47,130:INFO:Preloading libraries
+2023-08-25 20:48:47,130:INFO:Copying training dataset
+2023-08-25 20:48:47,130:INFO:Plot type: elbow
+2023-08-25 20:48:47,139:INFO:Fitting Model
+2023-08-25 20:48:47,140:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:47,239:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:47,400:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:47,587:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:47,863:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:48,111:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:48,328:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:48,390:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:48,471:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 20:48:48,535:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/yellowbrick/utils/kneed.py:156: YellowbrickWarning:
+
+No 'knee' or 'elbow point' detected This could be due to bad clustering, no actual clusters being formed etc.
+
+
+2023-08-25 20:48:48,535:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/yellowbrick/cluster/elbow.py:374: YellowbrickWarning:
+
+No 'knee' or 'elbow' point detected, pass `locate_elbow=False` to remove the warning
+
+
+2023-08-25 20:48:48,675:INFO:Visual Rendered Successfully
+2023-08-25 20:48:48,783:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:48,802:INFO:Initializing plot_model()
+2023-08-25 20:48:48,802:INFO:plot_model(plot=silhouette, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:48,802:INFO:Checking exceptions
+2023-08-25 20:48:48,804:INFO:Preloading libraries
+2023-08-25 20:48:48,804:INFO:Copying training dataset
+2023-08-25 20:48:48,804:INFO:Plot type: silhouette
+2023-08-25 20:48:48,813:INFO:Fitting Model
+2023-08-25 20:48:48,814:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/base.py:439: UserWarning:
+
+X does not have valid feature names, but KMeans was fitted with feature names
+
+
+2023-08-25 20:48:48,920:INFO:Visual Rendered Successfully
+2023-08-25 20:48:49,028:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:49,050:INFO:Initializing plot_model()
+2023-08-25 20:48:49,051:INFO:plot_model(plot=distribution, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:49,051:INFO:Checking exceptions
+2023-08-25 20:48:49,056:INFO:Preloading libraries
+2023-08-25 20:48:49,056:INFO:Copying training dataset
+2023-08-25 20:48:49,056:INFO:Plot type: distribution
+2023-08-25 20:48:49,057:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:48:49,057:INFO:Initializing assign_model()
+2023-08-25 20:48:49,057:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=KMeans(n_clusters=4, random_state=123), transformation=False, score=True, verbose=False)
+2023-08-25 20:48:49,058:INFO:Checking exceptions
+2023-08-25 20:48:49,058:INFO:Determining Trained Model
+2023-08-25 20:48:49,058:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:48:49,058:INFO:Copying data
+2023-08-25 20:48:49,059:INFO:(335, 138)
+2023-08-25 20:48:49,059:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:49,059:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:48:49,059:INFO:Sorting dataframe
+2023-08-25 20:48:49,061:INFO:Rendering Visual
+2023-08-25 20:48:49,086:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,087:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,087:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,088:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,089:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,089:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,089:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,089:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,089:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,090:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,091:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,092:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,093:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,093:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,093:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,093:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,093:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:1223: PerformanceWarning:
+
+DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+
+2023-08-25 20:48:49,134:INFO:Visual Rendered Successfully
+2023-08-25 20:48:49,226:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:49,235:INFO:Initializing plot_model()
+2023-08-25 20:48:49,235:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:49,235:INFO:Checking exceptions
+2023-08-25 20:48:49,236:INFO:Preloading libraries
+2023-08-25 20:48:49,237:INFO:Copying training dataset
+2023-08-25 20:48:49,237:INFO:Plot type: cluster
+2023-08-25 20:48:49,237:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:48:49,237:INFO:Initializing assign_model()
+2023-08-25 20:48:49,237:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2023-08-25 20:48:49,237:INFO:Checking exceptions
+2023-08-25 20:48:49,237:INFO:Determining Trained Model
+2023-08-25 20:48:49,237:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:48:49,237:INFO:Copying data
+2023-08-25 20:48:49,246:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-08-25 20:48:49,246:INFO:(335, 138)
+2023-08-25 20:48:49,246:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:49,246:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:48:49,246:INFO:Fitting PCA()
+2023-08-25 20:48:49,269:INFO:Sorting dataframe
+2023-08-25 20:48:49,270:INFO:Rendering Visual
+2023-08-25 20:48:49,293:INFO:Visual Rendered Successfully
+2023-08-25 20:48:49,380:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:49,389:INFO:Initializing plot_model()
+2023-08-25 20:48:49,389:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:49,389:INFO:Checking exceptions
+2023-08-25 20:48:49,391:INFO:Preloading libraries
+2023-08-25 20:48:49,391:INFO:Copying training dataset
+2023-08-25 20:48:49,391:INFO:Plot type: tsne
+2023-08-25 20:48:49,392:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:48:49,392:INFO:Initializing assign_model()
+2023-08-25 20:48:49,392:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=False, verbose=False)
+2023-08-25 20:48:49,392:INFO:Checking exceptions
+2023-08-25 20:48:49,392:INFO:Determining Trained Model
+2023-08-25 20:48:49,392:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:48:49,392:INFO:Copying data
+2023-08-25 20:48:49,400:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-08-25 20:48:49,400:INFO:(335, 138)
+2023-08-25 20:48:49,400:INFO:assign_model() successfully completed......................................
+2023-08-25 20:48:49,400:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:48:49,401:INFO:Fitting TSNE()
+2023-08-25 20:48:50,890:INFO:Sorting dataframe
+2023-08-25 20:48:50,890:INFO:Rendering Visual
+2023-08-25 20:48:50,914:INFO:Visual Rendered Successfully
+2023-08-25 20:48:51,003:INFO:plot_model() successfully completed......................................
+2023-08-25 20:48:51,013:INFO:Initializing evaluate_model()
+2023-08-25 20:48:51,013:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:48:51,017:INFO:Initializing plot_model()
+2023-08-25 20:48:51,017:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:48:51,017:INFO:Checking exceptions
+2023-08-25 20:48:51,018:INFO:Preloading libraries
+2023-08-25 20:48:51,018:INFO:Copying training dataset
+2023-08-25 20:48:51,018:INFO:Plot type: pipeline
+2023-08-25 20:49:11,439:INFO:Initializing plot_model()
+2023-08-25 20:49:11,440:INFO:plot_model(plot=cluster, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, system=True)
+2023-08-25 20:49:11,440:INFO:Checking exceptions
+2023-08-25 20:49:11,441:INFO:Preloading libraries
+2023-08-25 20:49:11,441:INFO:Copying training dataset
+2023-08-25 20:49:11,441:INFO:Plot type: cluster
+2023-08-25 20:49:11,442:INFO:SubProcess assign_model() called ==================================
+2023-08-25 20:49:11,442:INFO:Initializing assign_model()
+2023-08-25 20:49:11,442:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x1744d94c0>, model=KMeans(n_clusters=4, random_state=123), transformation=True, score=True, verbose=False)
+2023-08-25 20:49:11,442:INFO:Checking exceptions
+2023-08-25 20:49:11,442:INFO:Determining Trained Model
+2023-08-25 20:49:11,443:INFO:Trained Model : K-Means Clustering
+2023-08-25 20:49:11,443:INFO:Copying data
+2023-08-25 20:49:11,457:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-08-25 20:49:11,457:INFO:(335, 138)
+2023-08-25 20:49:11,457:INFO:assign_model() successfully completed......................................
+2023-08-25 20:49:11,457:INFO:SubProcess assign_model() end ==================================
+2023-08-25 20:49:11,458:INFO:Fitting PCA()
+2023-08-25 20:49:11,477:INFO:Sorting dataframe
+2023-08-25 20:49:11,478:INFO:Rendering Visual
+2023-08-25 20:49:11,505:INFO:Visual Rendered Successfully
+2023-08-25 20:49:11,635:INFO:plot_model() successfully completed......................................
+2023-08-25 20:49:28,911:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/seaborn/categorical.py:3201: UserWarning:
+
+Setting `sharex=False` with `color=None` may cause different levels of the `x` variable to share colors. This will change in a future version.
+
+
+2023-08-25 20:49:31,101:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:49:31,104:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:49:31,106:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:49:31,107:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/plotly/express/_core.py:271: FutureWarning:
+
+The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+
+2023-08-25 20:49:40,657:INFO:PyCaret ClusteringExperiment
+2023-08-25 20:49:40,657:INFO:Logging name: cluster-default-name
+2023-08-25 20:49:40,657:INFO:ML Usecase: MLUsecase.CLUSTERING
+2023-08-25 20:49:40,657:INFO:version 3.0.0
+2023-08-25 20:49:40,657:INFO:Initializing setup()
+2023-08-25 20:49:40,657:INFO:self.USI: a5fe
+2023-08-25 20:49:40,657:INFO:self._variable_keys: {'html_param', 'gpu_param', 'pipeline', 'memory', 'logging_param', '_available_plots', 'USI', 'exp_name_log', '_ml_usecase', 'log_plots_param', 'seed', 'gpu_n_jobs_param', 'n_jobs_param', 'data', 'X', 'idx', 'exp_id'}
+2023-08-25 20:49:40,657:INFO:Checking environment
+2023-08-25 20:49:40,657:INFO:python_version: 3.9.6
+2023-08-25 20:49:40,657:INFO:python_build: ('default', 'May  7 2023 23:32:44')
+2023-08-25 20:49:40,657:INFO:machine: arm64
+2023-08-25 20:49:40,657:INFO:platform: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:49:40,657:INFO:Memory: svmem(total=8589934592, available=1897267200, percent=77.9, used=3135094784, free=85884928, active=1858650112, inactive=1806598144, wired=1276444672)
+2023-08-25 20:49:40,657:INFO:Physical Core: 8
+2023-08-25 20:49:40,657:INFO:Logical Core: 8
+2023-08-25 20:49:40,657:INFO:Checking libraries
+2023-08-25 20:49:40,657:INFO:System:
+2023-08-25 20:49:40,657:INFO:    python: 3.9.6 (default, May  7 2023, 23:32:44)  [Clang 14.0.3 (clang-1403.0.22.14.1)]
+2023-08-25 20:49:40,657:INFO:executable: /Library/Developer/CommandLineTools/usr/bin/python3
+2023-08-25 20:49:40,657:INFO:   machine: macOS-13.4.1-arm64-arm-64bit
+2023-08-25 20:49:40,657:INFO:PyCaret required dependencies:
+2023-08-25 20:49:40,657:INFO:                 pip: 21.2.4
+2023-08-25 20:49:40,657:INFO:          setuptools: 58.0.4
+2023-08-25 20:49:40,657:INFO:             pycaret: 3.0.0
+2023-08-25 20:49:40,657:INFO:             IPython: 8.8.0
+2023-08-25 20:49:40,657:INFO:          ipywidgets: 8.0.6
+2023-08-25 20:49:40,657:INFO:                tqdm: 4.64.1
+2023-08-25 20:49:40,657:INFO:               numpy: 1.24.3
+2023-08-25 20:49:40,657:INFO:              pandas: 1.5.3
+2023-08-25 20:49:40,657:INFO:              jinja2: 3.1.2
+2023-08-25 20:49:40,657:INFO:               scipy: 1.9.1
+2023-08-25 20:49:40,657:INFO:              joblib: 1.2.0
+2023-08-25 20:49:40,657:INFO:             sklearn: 1.2.2
+2023-08-25 20:49:40,657:INFO:                pyod: 1.0.9
+2023-08-25 20:49:40,657:INFO:            imblearn: 0.10.1
+2023-08-25 20:49:40,657:INFO:   category_encoders: 2.6.0
+2023-08-25 20:49:40,657:INFO:            lightgbm: 3.3.5
+2023-08-25 20:49:40,657:INFO:               numba: 0.56.4
+2023-08-25 20:49:40,657:INFO:            requests: 2.31.0
+2023-08-25 20:49:40,657:INFO:          matplotlib: 3.7.0
+2023-08-25 20:49:40,657:INFO:          scikitplot: 0.3.7
+2023-08-25 20:49:40,657:INFO:         yellowbrick: 1.5
+2023-08-25 20:49:40,658:INFO:              plotly: 5.14.1
+2023-08-25 20:49:40,658:INFO:             kaleido: 0.2.1
+2023-08-25 20:49:40,658:INFO:         statsmodels: 0.13.5
+2023-08-25 20:49:40,658:INFO:              sktime: 0.17.0
+2023-08-25 20:49:40,658:INFO:               tbats: 1.1.2
+2023-08-25 20:49:40,658:INFO:            pmdarima: 2.0.3
+2023-08-25 20:49:40,658:INFO:              psutil: 5.9.4
+2023-08-25 20:49:40,658:INFO:PyCaret optional dependencies:
+2023-08-25 20:49:40,658:INFO:                shap: Not installed
+2023-08-25 20:49:40,658:INFO:           interpret: Not installed
+2023-08-25 20:49:40,658:INFO:                umap: Not installed
+2023-08-25 20:49:40,658:INFO:    pandas_profiling: Not installed
+2023-08-25 20:49:40,658:INFO:  explainerdashboard: Not installed
+2023-08-25 20:49:40,658:INFO:             autoviz: Not installed
+2023-08-25 20:49:40,658:INFO:           fairlearn: Not installed
+2023-08-25 20:49:40,658:INFO:             xgboost: Not installed
+2023-08-25 20:49:40,658:INFO:            catboost: Not installed
+2023-08-25 20:49:40,658:INFO:              kmodes: Not installed
+2023-08-25 20:49:40,658:INFO:             mlxtend: Not installed
+2023-08-25 20:49:40,658:INFO:       statsforecast: Not installed
+2023-08-25 20:49:40,658:INFO:        tune_sklearn: Not installed
+2023-08-25 20:49:40,658:INFO:                 ray: Not installed
+2023-08-25 20:49:40,658:INFO:            hyperopt: Not installed
+2023-08-25 20:49:40,658:INFO:              optuna: Not installed
+2023-08-25 20:49:40,658:INFO:               skopt: Not installed
+2023-08-25 20:49:40,658:INFO:              mlflow: Not installed
+2023-08-25 20:49:40,658:INFO:              gradio: Not installed
+2023-08-25 20:49:40,658:INFO:             fastapi: Not installed
+2023-08-25 20:49:40,658:INFO:             uvicorn: Not installed
+2023-08-25 20:49:40,658:INFO:              m2cgen: Not installed
+2023-08-25 20:49:40,658:INFO:           evidently: Not installed
+2023-08-25 20:49:40,658:INFO:               fugue: Not installed
+2023-08-25 20:49:40,658:INFO:           streamlit: 1.20.0
+2023-08-25 20:49:40,658:INFO:             prophet: Not installed
+2023-08-25 20:49:40,658:INFO:None
+2023-08-25 20:49:40,658:INFO:Set up data.
+2023-08-25 20:49:40,675:INFO:Set up index.
+2023-08-25 20:49:40,675:INFO:Assigning column types.
+2023-08-25 20:49:40,677:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-08-25 20:49:40,677:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:49:40,677:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,677:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2023-08-25 20:49:40,677:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,677:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-08-25 20:49:40,678:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,678:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,678:INFO:Preparing preprocessing pipeline...
+2023-08-25 20:49:40,678:INFO:Set up simple imputation.
+2023-08-25 20:49:40,679:INFO:Set up encoding of categorical features.
+2023-08-25 20:49:40,728:INFO:Finished creating preprocessing pipeline.
+2023-08-25 20:49:40,731:INFO:Pipeline: Pipeline(memory=FastMemory(location=/var/folders/0x/lgbrscr56sq1gtx792kyzgvc0000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['year', 'rating', 'word_count',
+                                             '0', '1', '2', '3', '4', '5', '6',
+                                             '7', '8', '9', '10', '11', '12',
+                                             '13', '14', '15', '16', '17', '18',
+                                             '19', '20', '21', '22', '23', '24',
+                                             '25', '26', ...],
+                                    transformer=SimpleImputer())),
+                ('categorica...
+                 TransformerWrapper(include=['title_pt', 'title_en', 'genre',
+                                             'sinopse',
+                                             'sinopse_no_stopwords'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['title_pt', 'title_en', 'genre',
+                                             'sinopse',
+                                             'sinopse_no_stopwords'],
+                                    transformer=OneHotEncoder(cols=['title_pt',
+                                                                    'title_en',
+                                                                    'genre',
+                                                                    'sinopse',
+                                                                    'sinopse_no_stopwords'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True)))])
+2023-08-25 20:49:40,731:INFO:Creating final display dataframe.
+2023-08-25 20:49:40,838:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (335, 145)
+2     Transformed data shape           (335, 1828)
+3           Numeric features                   140
+4       Categorical features                     5
+5   Rows with missing values                  2.1%
+6                 Preprocess                  True
+7            Imputation type                simple
+8         Numeric imputation                  mean
+9     Categorical imputation                  mode
+10  Maximum one-hot encoding                    -1
+11           Encoding method                  None
+12                  CPU Jobs                    -1
+13                   Use GPU                 False
+14            Log Experiment                 False
+15           Experiment Name  cluster-default-name
+16                       USI                  a5fe
+2023-08-25 20:49:40,841:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,841:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-08-25 20:49:40,841:INFO:setup() successfully completed in 0.19s...............
+2023-08-25 20:49:40,858:INFO:Initializing create_model()
+2023-08-25 20:49:40,859:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177c52b80>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-08-25 20:49:40,859:INFO:Checking exceptions
+2023-08-25 20:49:40,985:INFO:Importing untrained model
+2023-08-25 20:49:40,986:INFO:K-Means Clustering Imported successfully
+2023-08-25 20:49:40,989:INFO:Fitting Model
+2023-08-25 20:49:41,125:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:49:41,125:INFO:create_models() successfully completed......................................
+2023-08-25 20:49:41,135:INFO:Uploading results into container
+2023-08-25 20:49:41,137:INFO:Uploading model into container now
+2023-08-25 20:49:41,143:INFO:_master_model_container: 1
+2023-08-25 20:49:41,143:INFO:_display_container: 2
+2023-08-25 20:49:41,144:INFO:KMeans(n_clusters=4, random_state=123)
+2023-08-25 20:49:41,144:INFO:create_model() successfully completed......................................
+2023-08-25 20:49:41,358:INFO:Initializing evaluate_model()
+2023-08-25 20:49:41,358:INFO:evaluate_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177c52b80>, estimator=KMeans(n_clusters=4, random_state=123), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-08-25 20:49:41,392:INFO:Initializing plot_model()
+2023-08-25 20:49:41,392:INFO:plot_model(plot=pipeline, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177c52b80>, system=True)
+2023-08-25 20:49:41,392:INFO:Checking exceptions
+2023-08-25 20:49:41,393:INFO:Preloading libraries
+2023-08-25 20:49:41,394:INFO:Copying training dataset
+2023-08-25 20:49:41,394:INFO:Plot type: pipeline
+2023-08-25 21:02:04,977:INFO:Initializing plot_model()
+2023-08-25 21:02:04,978:INFO:plot_model(plot=elbow, fold=None, use_train_data=False, verbose=False, display=None, display_format=None, estimator=KMeans(n_clusters=4, random_state=123), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.clustering.oop.ClusteringExperiment object at 0x177c52b80>, system=True)
+2023-08-25 21:02:04,978:INFO:Checking exceptions
+2023-08-25 21:02:04,985:INFO:Preloading libraries
+2023-08-25 21:02:04,986:INFO:Copying training dataset
+2023-08-25 21:02:04,986:INFO:Plot type: elbow
+2023-08-25 21:02:05,099:INFO:Fitting Model
+2023-08-25 21:02:05,107:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:05,218:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:05,631:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:05,825:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:06,073:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:06,335:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:06,727:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:07,056:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:07,317:WARNING:/Users/henricobela/Library/Python/3.9/lib/python/site-packages/sklearn/cluster/_kmeans.py:870: FutureWarning:
+
+The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+
+
+2023-08-25 21:02:07,879:INFO:Visual Rendered Successfully
+2023-08-25 21:02:08,018:INFO:plot_model() successfully completed......................................

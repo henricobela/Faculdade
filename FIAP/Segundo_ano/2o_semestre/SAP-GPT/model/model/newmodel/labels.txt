@@ -1,0 +1,2 @@
+0 Coca_Cola
+1 Fanta_Laranja

@@ -1,0 +1,17 @@
+[data-testid="stHeader"]{
+    display: none;
+    }
+
+    [data-testid="stAppViewContainer"]{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #23a6d5;
+
+      }
+.row-widget.stButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+           
+}

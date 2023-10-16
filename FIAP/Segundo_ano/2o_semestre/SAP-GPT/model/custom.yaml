@@ -1,0 +1,11 @@
+path:  /home/henrico/Github/SAP-GPT/model/data/OIDv4_ToolKit/OID/Dataset
+train: /home/henrico/Github/SAP-GPT/model/data/OIDv4_ToolKit/OID/Dataset/train
+test: /home/henrico/Github/SAP-GPT/model/data/OIDv4_ToolKit/OID/Dataset/test
+val: /home/henrico/Github/SAP-GPT/model/data/OIDv4_ToolKit/OID/Dataset/validation
+
+#Classes
+nc: 1
+
+#classes names
+#replace all class names list with your classes names
+names: ['Headphones']
